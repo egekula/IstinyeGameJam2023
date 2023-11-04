@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float climbingSpeed;
     private BoxCollider2D feetCollider;
     private CapsuleCollider2D bodyCollider;
-    [SerializeField] private Transform bulletTransformObject;
-    [SerializeField] private GameObject bullet;
+    //[SerializeField] private Transform bulletTransformObject;
+    //[SerializeField] private GameObject bullet;
     private bool _isAlive = true;
     private void Start()
     {
@@ -116,10 +116,10 @@ public class PlayerController : MonoBehaviour
     private void Shot()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        /*if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             Instantiate(bullet, bulletTransformObject.position, transform.rotation);
-        }
+        }*/
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -127,7 +127,9 @@ public class PlayerController : MonoBehaviour
         {
             _playerAnimator.SetBool("isJumping",false);
         }
+        
     }
+
 
     IEnumerator DeathTime()
     {

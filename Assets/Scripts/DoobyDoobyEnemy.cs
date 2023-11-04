@@ -24,6 +24,8 @@ public class DoobyDoobyEnemy : MonoBehaviour
         transform.localScale = new Vector2(-(Mathf.Sign(_doobyRb.velocity.x)), 1);
     }
 
+    
+
     private void OnTriggerExit2D(Collider2D other)
     {
         FlipDoobyDooby();

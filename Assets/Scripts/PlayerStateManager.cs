@@ -48,7 +48,8 @@ public class PlayerStateManager : MonoBehaviour
     private void TakeDeath()
     {
         playerLives--;
-        SceneManager.LoadScene(0);
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
         livesText.text = playerLives.ToString();
 
     }
