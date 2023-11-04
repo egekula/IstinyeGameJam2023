@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Ladder
+  - Dooby
+  - Lava
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Background
+  - Ladder
+  - Lava
+  - Enemies
+  - Player
+  - Bullet
+  - Coin
+  - NPC
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2933965839
+    locked: 0
+  - name: Platform
+    uniqueID: 486169283
+    locked: 0
+  - name: Lava
+    uniqueID: 132869933
+    locked: 0
+  - name: Ladder
+    uniqueID: 3888774277
+    locked: 0
+  - name: Collectables
+    uniqueID: 1496775203
+    locked: 0
+  - name: JumpyJumpy
+    uniqueID: 3535088759
+    locked: 0
+  - name: Enemy
+    uniqueID: 3150896651
+    locked: 0
+  - name: NPC
+    uniqueID: 1349215291
+    locked: 0
+  - name: Player
+    uniqueID: 2025293269
+    locked: 0
+  - name: Gun
+    uniqueID: 4240905795
+    locked: 0
