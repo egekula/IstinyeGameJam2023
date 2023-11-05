@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] private Transform bulletTransformObject;
     //[SerializeField] private GameObject bullet;
     private bool _isAlive = true;
+    [SerializeField] private AudioClip deathSong;
     private void Start()
     {
         _playerRb = GetComponent<Rigidbody2D>();
@@ -102,6 +103,7 @@ public class PlayerController : MonoBehaviour
         
         if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Lava")))
         {
+            GetComponent<AudioSource>().PlayOneShot(deathSong);
             _isAlive = false;
             _playerRb.velocity = new Vector2(20, 20);
             CameraShaker.Instance.ShakeOnce(4f, 2f, .5f, 1.5f);

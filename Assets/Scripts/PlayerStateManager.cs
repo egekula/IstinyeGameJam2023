@@ -57,7 +57,7 @@ public class PlayerStateManager : MonoBehaviour
     private void ResetGameSession()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Destroy(gameObject);
     }
 
