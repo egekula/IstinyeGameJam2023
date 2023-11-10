@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class PlayerStateManager : MonoBehaviour
 {
     [SerializeField] private int playerLives = 3;
     [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private TextMeshProUGUI coinText;
+    [SerializeField] private Image healthImage;
+    [SerializeField] private Image pumpkinImage;
     public int score = 0;
 
 
@@ -32,7 +36,17 @@ public class PlayerStateManager : MonoBehaviour
 
     }
 
-    
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            livesText.gameObject.SetActive(false);
+            coinText.gameObject.SetActive(false);
+            healthImage.gameObject.SetActive(false);
+            pumpkinImage.gameObject.SetActive(false);
+        }
+    }
+
     public void ProcessOfPlayerDeath()
     {
         if (playerLives>1)

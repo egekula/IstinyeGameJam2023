@@ -23,7 +23,7 @@ public class SceneController : MonoBehaviour
         {
             nextBuildIndex = 0;
         }
-
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextBuildIndex);
     }
 }
